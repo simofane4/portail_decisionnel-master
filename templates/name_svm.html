@@ -1,0 +1,75 @@
+{% extends 'svm_input.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+   <form method="post">
+                            {% csrf_token %}
+                            <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.name|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.sex|as_crispy_field }}
+                              </div>
+                            </div>
+                                                              <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.failure|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.schoolsup|as_crispy_field }}
+                              </div>
+                            </div>
+                                                              <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.fedu|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.medu|as_crispy_field }}
+                              </div>
+                            </div>
+                                                              <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.goout|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.freetime|as_crispy_field }}
+                              </div>
+                            </div>
+                                                              <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.mjob|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.fjob|as_crispy_field }}
+                              </div>
+                            </div>
+                                                              <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.raison|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.relation_familiale|as_crispy_field }}
+                              </div>
+                            </div>
+                                                              <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.absences|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.consomation_alcool|as_crispy_field }}
+                              </div>
+                            </div>
+                                                              <div class="form-row">
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.sante|as_crispy_field }}
+                              </div>
+                              <div class="form-group col-md-6 mb-0">
+                                {{ form.age|as_crispy_field }}
+                              </div>
+                            </div>
+
+                            <input type="submit" value="Prédiction">
+                          </form>
+{% endblock %}

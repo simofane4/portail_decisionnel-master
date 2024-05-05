@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Decision-making portal</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Slog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../static/css/portfolio.css">
+    <link rel="stylesheet" href="../static/css/aos.css">
+    <link href='../static/css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="../static/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i" rel="stylesheet">
+    <!-- //Fonts -->
+
+</head>
+
+<body>
+    <!-- mian-content -->
+    <div class="main-content" id="home">
+        <!-- header -->
+        <header class="py-1">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <h1>
+                        <a class="navbar-brand" href="index.html"><i class="um6p" aria-hidden="true"></i></a>
+                    </h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- //header -->
+        <!-- banner-w3layouts -->
+        <section class="banner-w3layouts">
+            <div class="container">
+                <div class="row banner-w3layouts-grids">
+                    <div class="col-lg-8 sign-info" data-aos="fade-right">
+                        <h3>CART</h3>
+                        <p class="para-sign mt-2 mb-4 text-center">Enter student information</p>
+
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+
+                    <div class="col-lg-4 banner-w3layouts-image pl-md-5">
+                        <div class="effect-w3">
+                            <img src="../static/images/img7.jpg" alt="" class="img-fluid image1">
+                            <img src="../static/images/img7.jpg" alt="" class="img-fluid image2">
+                            <img src="../static/images/img7.jpg" alt="" class="img-fluid image3">
+                            <img src="../static/images/img7.jpg" alt="" class="img-fluid image4">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //banner-w3layouts -->
+    </div>
+
+    <!--footer -->
+
+    <!-- //footer -->
+
+    <!-- copy-w3layoutsright -->
+    <div class="cpy-right text-center py-3">
+        <p class="copy-w3layouts">© 2024 Developed by AOUANE Fatimazahrae-FSE-Applied Linguistics and English Language Teaching
+        </p>
+    </div>
+    <!-- //copy-w3layoutsright -->
+    <!--model-forms-->
+
+    <!--//Register-->
+    <script src="../static/js/jquery-2.2.3.min.js"></script>
+    <!--/aos -->
+    <script src="../static/js/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+
+    </script>
+    <!--//aos -->
+    <!--/ start-smoth-scrolling -->
+    <script src="../static/js/move-top.js"></script>
+    <script src="../static/js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <!-- //js -->
+
+    <script src="../static/js/bootstrap.js"></script>
+
+</body>
+
+</html>
